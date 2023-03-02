@@ -595,6 +595,15 @@ header .user .image {
 .project-progress ul li:last-child::after {
   background-color: white;
 }
+@media (max-width: 767px) {
+  .project-progress ul li::after {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+}
 /* end project progress */
 /* start reminders */
 @media (max-width: 767px) {
