@@ -597,11 +597,8 @@ header .user .image {
 }
 @media (max-width: 767px) {
   .project-progress ul li::after {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    outline: none;
+    border: 2px solid var(--blue-color);
 }
 }
 /* end project progress */
