@@ -953,7 +953,7 @@ textarea {
 }
 .custm-radio {
   position: relative;
-  width: 34%;
+  width: 32%;
 }
 @media (max-width: 767px) {
   .custm {
@@ -966,6 +966,7 @@ textarea {
 }
 .custm-radio input {
   appearance: none;
+  display: none;
 }
 .custm-radio label {
   position: absolute;
