@@ -129,6 +129,9 @@
 .ml-50 {
   margin-left: 50px;
 }
+.p-10 {
+  padding: 10px;
+}
 .p-15 {
   padding: 15px;
 }
@@ -149,6 +152,12 @@
 }
 .gap-20 {
   gap: 20px;
+}
+@media (max-width: 767px) {
+    .margin-mobile {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 /* margin and padding */
 /* border */
@@ -191,6 +200,9 @@
 .fs-16 {
   font-size: 16px;
 }
+.fs-18 {
+  font-size: 18px;
+}
 .fs-20 {
   font-size: 20px;
 }
@@ -209,6 +221,11 @@
 .text-c {
   text-align: center;
 }
+@media (max-width: 767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
 /* fonts */
 /* box */
 .d-flex {
@@ -225,6 +242,9 @@
 }
 .flex-1 {
     flex: 1;
+}
+.flex-wrap {
+    flex-wrap: wrap;
 }
 .d-grid {
   display: grid;
@@ -272,13 +292,6 @@
   position: absolute;
 }
 /* End Position */
-/* start font */
-@media (max-width: 767px) {
-  .txt-c-mobile {
-    text-align: center;
-  }
-}
-/* end font */
 /* start Components */
 .c-flex {
   display: flex;

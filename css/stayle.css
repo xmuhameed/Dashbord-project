@@ -48,10 +48,11 @@ ul {
 /* start nav */
 .page {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 nav {
   box-shadow: 0 0 20px #ccc;
-  width: calc(15vw - 15px);
+  width: 15vw;
   z-index: 1000;
 }
 nav h2 {
@@ -143,16 +144,22 @@ nav ul li i {
 }
 /* End nav */
 .content {
-  width: 85vw;
+  max-width: calc(85vw - 15px);
 }
 @media (max-width: 767px) {
   .content {
-    width: calc(100vw - 75px);
+    max-width: calc(100vw - 75px);
   }
 }
 /* start header */
 header {
   height: 60px;
+  width: 85vw
+}
+@media (max-width: 767px) {
+  header {
+    width: calc(100vw - 60px);
+  }
 }
 header .form i {
   color: #bbb;
@@ -252,7 +259,7 @@ header .user .image {
 }
 /* start Widgets */
 .Widgets {
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 @media (max-width: 767px) {
   .Widgets {
@@ -776,7 +783,75 @@ color: var(--blue-color);
   left: -60px;
 }
 /* end projects */
-
+/* settings start  */
+.check input[type="checkbox"] {
+  appearance: none;
+  background-color: #ccc;
+  width: 72px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.check input[type="checkbox"]:checked {
+  background-color: var(--blue-color);
+}
+.check input[type="checkbox"]::before {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  display: grid;
+  place-items: center;
+  color: #ccc;
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: 0.3s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.check input[type="checkbox"]:checked::before {
+  content: "\f00c";
+  left: 64%;
+  color: var(--blue-color);
+}
+textarea {
+  resize: none;
+  width: 100%;
+  border-color: #ccc;
+}
+.general-info form input[type="email"] {
+  width: 85%;
+  background-color: #f0f4f8;
+  color: #ccc;
+  cursor: not-allowed;
+}
+/* settings end  */
 /* start animation */
 @keyframes ring {
   0%,

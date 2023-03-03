@@ -63,8 +63,79 @@
                 </div>
             </header>
             <h1 class="ml-30 p-relative">Settings</h1>
-            <div class="Widgets d-grid gap-20 ml-25 mr-25 mt-30">
-                
+            <div class="Widgets d-grid gap-20 ml-25 mr-25 mt-30 margin-mobile">
+                <div class="site-control br-10 bc-white box-sh p-20">              <!-- site control -->
+                    <h2 class="fw-600 fs-30 mt-10 mb-5">Site Control</h2>
+                    <span class="c-p">Control The Website If There Is Maintenance</span>
+                    <div class="b-flex mt-20">
+                        <div class="text">
+                            <p class="mb-0 mt-0">Website Control</p>
+                            <span class="c-p fs-13">Open/Close Website And Type The Reason</span>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="" checked>
+                        </div>
+                    </div>
+                    <textarea class="border-ccc br-6 p-10 mt-30" cols="30" rows="10" placeholder="close message content"></textarea>
+                </div>
+                <div class="general-info br-10 bc-white box-sh p-20">              <!-- general info -->
+                    <h2 class="fw-600 fs-30 mt-10 mb-5">General Info</h2>
+                    <span class="c-p">General Information About Your Account</span>
+                    <form class="mt-20">
+                        <label class="c-p mb-5 d-block" for="first-name">First Name</label>
+                        <input class="border-ccc p-10 full-w br-6 mb-20" 
+                        type="text" name="first-name" id="first-name" placeholder="Your First Name">
+                        <label class="c-p mb-5 d-block" for="last-name">First Name</label>
+                        <input class="border-ccc p-10 full-w br-6 mb-20" 
+                        type="text" name="last-name" id="last-name" placeholder="Your Last Name">
+                        <label class="c-p mb-5 d-block" for="email">Email</label>
+                        <div class="b-flex">
+                            <input class="border-ccc p-10 br-6" 
+                            type="email" name="email" id="email" placeholder="Your Email" value="O@nn.sa" readonly>
+                            <a class="c-blue" href="#">Change</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="security-info br-10 bc-white box-sh p-20">                  <!-- Security Info -->
+                    <h2 class="fw-600 fs-30 mt-10 mb-5">Security Info</h2>
+                    <span class="c-p">Security Information About Your Account</span>
+                    <div class="password-change b-flex mt-25 border-bottom pb-20">
+                        <div class="text">
+                            <p class="mb-0 mt-0">Password</p>
+                            <span class="c-p fs-13">Last Change On 25/10/2021</span>
+                        </div>
+                        <a href="#" class="btn-shape btn-color fs-16">Change</a>
+                    </div>
+                    <div class="two-factor b-flex mt-25 border-bottom pb-20">
+                        <div class="text">
+                            <p class="mb-0 mt-0">Two-Factor Authentication</p>
+                            <span class="c-p fs-13">Enable/Disable The Feature</span>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div class="devices b-flex mt-25 pb-20">
+                        <div class="text">
+                            <p class="mb-0 mt-0">Devices</p>
+                            <span class="c-p fs-13">Check The Login Devices List</span>
+                        </div>
+                        <a href="#" class="btn-shape c-black bg-eee fs-18">Devices</a>
+                    </div>
+                </div>
+                <div class="social-info br-10 bc-white box-sh p-20">                  <!-- Social Info -->
+                    <h2 class="fw-600 fs-30 mt-10 mb-5">Social Info</h2>
+                    <span class="c-p">Social Media Information</span>
+                </div>
+                <div class="widgets-control br-10 bc-white box-sh p-20">                  <!-- Widgets Control -->
+                    <h2 class="fw-600 fs-30 mt-10 mb-5">Widgets Control</h2>
+                    <span class="c-p">Show/Hide Widgets</span>
+                </div>
+                <div class="backup-manger br-10 bc-white box-sh p-20">                  <!-- Backup Manager -->
+                    <h2 class="fw-600 fs-30 mt-10 mb-5">Backup Manager</h2>
+                    <span class="c-p">Control Backup Time And Location</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
