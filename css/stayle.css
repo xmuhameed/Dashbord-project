@@ -851,6 +851,162 @@ textarea {
   color: #ccc;
   cursor: not-allowed;
 }
+.social-info .card {
+  height: 40px;
+  overflow: hidden;
+}
+.social-info .card i {
+  color: #aaa;
+  width: 40px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.social-info .card input {
+  border: none;
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+}
+.social-info .card:focus-within i {
+  color: black;
+}
+.check-normal {
+  display: flex;
+  align-items: center;
+}
+.widgets-control .check-normal input {
+  appearance: none;
+  position: relative;
+  margin-left: 30px;
+}
+.widgets-control .check-normal input::after {
+  content: "";
+  background-color: white;
+  height: 18px;
+  width: 18px;
+  border: 2px solid #ccc;
+  position: absolute;
+  left: -25px;
+  top: -10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.widgets-control .check-normal input::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  background-color: var(--blue-color);
+  color: white;
+  width: 1px;
+  height: 1px;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  position: absolute;
+  left: -25px;
+  top: -10px;
+  z-index: 2;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.widgets-control .check-normal input:checked::before {
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--blue-color);
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+}
+.backup-manger form .radio input {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.backup-manger form .radio label {
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}
+.custm {
+  justify-content: space-between;
+}
+.custm-radio {
+  position: relative;
+  width: 34%;
+}
+@media (max-width: 767px) {
+  .custm {
+  flex-direction: column;
+}
+.custm-radio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+}
+.custm-radio input {
+  appearance: none;
+}
+.custm-radio label {
+  position: absolute;
+  position: relative;
+  border: 1px solid #ccc;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  padding-top: 35px;
+  left: 50%;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.custm-radio label::before {
+  content: "\f233";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.custm-radio input:checked ~ label {
+  border-color: var(--blue-color);
+  color: var(--blue-color);
+}
+.custm-radio input:checked ~ label::before {
+  color: var(--blue-color);
+}
 /* settings end  */
 /* start animation */
 @keyframes ring {

@@ -63,7 +63,7 @@
                 </div>
             </header>
             <h1 class="ml-30 p-relative">Settings</h1>
-            <div class="Widgets d-grid gap-20 ml-25 mr-25 mt-30 margin-mobile">
+            <div class="Widgets d-grid gap-20 ml-25 mr-25 mt-30 mb-30 margin-mobile">
                 <div class="site-control br-10 bc-white box-sh p-20">              <!-- site control -->
                     <h2 class="fw-600 fs-30 mt-10 mb-5">Site Control</h2>
                     <span class="c-p">Control The Website If There Is Maintenance</span>
@@ -96,7 +96,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="security-info br-10 bc-white box-sh p-20">                  <!-- Security Info -->
+                <div class="security-info br-10 bc-white box-sh p-20">             <!-- Security Info -->
                     <h2 class="fw-600 fs-30 mt-10 mb-5">Security Info</h2>
                     <span class="c-p">Security Information About Your Account</span>
                     <div class="password-change b-flex mt-25 border-bottom pb-20">
@@ -112,7 +112,7 @@
                             <span class="c-p fs-13">Enable/Disable The Feature</span>
                         </div>
                         <div class="check">
-                            <input type="checkbox">
+                            <input type="checkbox" checked>
                         </div>
                     </div>
                     <div class="devices b-flex mt-25 pb-20">
@@ -123,17 +123,81 @@
                         <a href="#" class="btn-shape c-black bg-eee fs-18">Devices</a>
                     </div>
                 </div>
-                <div class="social-info br-10 bc-white box-sh p-20">                  <!-- Social Info -->
+                <div class="social-info br-10 bc-white box-sh p-20">               <!-- Social Info -->
                     <h2 class="fw-600 fs-30 mt-10 mb-5">Social Info</h2>
                     <span class="c-p">Social Media Information</span>
+                    <div class="card d-flex border-ccc br-6 mt-25">
+                        <i class="fa-brands fa-twitter bg-f6 c-flex"></i>
+                        <input class="flex-1 bg-f6" type="text" placeholder="Twitter Username">
+                    </div>
+                    <div class="card d-flex border-ccc br-6 mt-15">
+                        <i class="fa-brands fa-facebook-f bg-f6 c-flex"></i>
+                        <input class="flex-1 bg-f6" type="text" placeholder="Facebook Username">
+                    </div>
+                    <div class="card d-flex border-ccc br-6 mt-15">
+                        <i class="fa-brands fa-linkedin-in bg-f6 c-flex"></i>
+                        <input class="flex-1 bg-f6" type="text" placeholder="Linkedin Username">
+                    </div>
+                    <div class="card d-flex border-ccc br-6 mt-15">
+                        <i class="fa-brands fa-youtube bg-f6 c-flex"></i>
+                        <input class="flex-1 bg-f6" type="text" placeholder="Youtube Username">
+                    </div>
                 </div>
-                <div class="widgets-control br-10 bc-white box-sh p-20">                  <!-- Widgets Control -->
+                <div class="widgets-control br-10 bc-white box-sh p-20">           <!-- Widgets Control -->
                     <h2 class="fw-600 fs-30 mt-10 mb-5">Widgets Control</h2>
                     <span class="c-p">Show/Hide Widgets</span>
+                    <div class="check-normal mt-25">
+                        <input type="checkbox" id="quick-draft" checked>
+                        <label for="quick-draft">Quick Draft</label>
+                    </div>
+                    <div class="check-normal mt-25">
+                        <input type="checkbox" id="yearly-targets" checked>
+                        <label for="yearly-targets">Yearly Targets</label>
+                    </div>
+                    <div class="check-normal mt-25">
+                        <input type="checkbox" id="tickets-statistics" checked>
+                        <label for="tickets-statistics">Tickets Statistics</label>
+                    </div>
+                    <div class="check-normal mt-25">
+                        <input type="checkbox" id="latest-news" checked>
+                        <label for="latest-news">Latest News</label>
+                    </div>
+                    <div class="check-normal mt-25">
+                        <input type="checkbox" id="latest-tasks">
+                        <label for="latest-tasks">Latest Tasks</label>
+                    </div>
+                    <div class="check-normal mt-25 mb-30">
+                        <input type="checkbox" id="top-search" checked>
+                        <label for="top-search">Top Search Items</label>
+                    </div>
                 </div>
-                <div class="backup-manger br-10 bc-white box-sh p-20">                  <!-- Backup Manager -->
+                <div class="backup-manger br-10 bc-white box-sh p-20">             <!-- Backup Manager -->
                     <h2 class="fw-600 fs-30 mt-10 mb-5">Backup Manager</h2>
                     <span class="c-p">Control Backup Time And Location</span>
+                    <form class="mt-25">
+                        <div class="radio mb-20 border-bottom">
+                            <input class="mb-20" type="radio" name="time" id="daily" checked>
+                            <label for="daily">Daily</label> <br>
+                            <input class="mb-20" type="radio" name="time" id="weekly">
+                            <label for="weekly">Weekly</label><br>
+                            <input class="mb-20" type="radio" name="time" id="monthly">
+                            <label for="monthly">Monthly</label>
+                        </div>
+                    </form>
+                    <div class="custm d-flex mt-50">
+                        <div class="custm-radio c-flex">
+                            <input class="mb-20" type="radio" name="size" id="Megaman">
+                            <label for="Megaman">Megaman</label>
+                        </div>
+                        <div class="custm-radio c-flex">
+                            <input class="mb-20" type="radio" name="size" id="Zero" checked>
+                            <label for="Zero">Zero</label>
+                        </div>
+                        <div class="custm-radio c-flex">
+                            <input class="mb-20" type="radio" name="size" id="Sigma">
+                            <label for="Sigma">Sigma</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
