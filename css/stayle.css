@@ -1171,6 +1171,54 @@ textarea {
   }
 }
 /* projects end  */
+/* courses start  */
+.courses-widgets {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.courses-widgets .widget {
+  overflow: hidden;
+}
+.courses-widgets .widget .image {
+  height: 280px;
+  background-size: cover;
+  background-position: center center;
+}
+.courses-widgets .widget:nth-child(1) .image,
+.courses-widgets .widget:nth-child(8) .image {
+  background-image: url(../imgs/course-01.jpg);
+}
+.courses-widgets .widget:nth-child(2) .image,
+.courses-widgets .widget:nth-child(6) .image {
+  background-image: url(../imgs/course-02.jpg);
+}
+.courses-widgets .widget:nth-child(3) .image,
+.courses-widgets .widget:nth-child(7) .image {
+  background-image: url(../imgs/course-03.jpg);
+}
+.courses-widgets .widget:nth-child(4) .image,
+.courses-widgets .widget:nth-child(10) .image {
+  background-image: url(../imgs/course-04.jpg);
+}
+.courses-widgets .widget:nth-child(5) .image,
+.courses-widgets .widget:nth-child(9) .image {
+  background-image: url(../imgs/course-05.jpg);
+}
+.courses-widgets .widget .image img {
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.courses-widgets .widget .content .text {
+  height: 145.5px;
+}
+.courses-widgets .widget .content a {
+  margin-top: -13px;
+}
+/* courses end  */
 /* start animation */
 @keyframes ring {
   0%,
