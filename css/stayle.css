@@ -1009,6 +1009,105 @@ textarea {
   color: var(--blue-color);
 }
 /* settings end  */
+/* profile start  */
+.profile-widget .profile-user {
+  width: 20%;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+}
+@media (max-width: 991px) {
+  .profile-widget {
+    flex-direction: column;
+  }
+  .profile-widget .profile-user {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+.profile-widget .profile-user img {
+  width: 100px;
+}
+.profile-widget .profile-user .level-prog {
+  height: 6px;
+  width: 120px;
+  margin: 20px auto 15px;
+  position: relative;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.profile-widget .profile-user .level-prog span {
+  height: 6px;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.profile-widget .profile-user .stars i {
+  color: #f59e0b;
+}
+.profile-widget .general-info .card .card-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.profile-widget .general-info .card .card-content p {
+  width: fit-content;
+}
+.profile-widget .general-info .card .card-content .check input {
+  width: 95px;
+  height: 26px;
+}
+.profile-widget .general-info .card .card-content .check input::before {
+  font-size: 10px;
+  height: 20px;
+  width: 20px;
+}
+.profile-widget .general-info .card .card-content .check input:checked::before {
+  left: 76%;
+}
+@media (max-width: 767px) {
+  .profile-widget .general-info .card {
+    text-align: center;
+  }
+  .profile-widget .general-info .card p {
+    margin: 10px auto;
+  }
+  .profile-widget .general-info .card .check {
+    margin: 10px auto;
+  }
+}
+.other-Widgets .my-skills {
+  flex-basis: 30%;
+}
+@media (max-width: 767px) {
+  .other-Widgets {
+    flex-direction: column;
+  }
+}
+ .other-Widgets .latest-activities img {
+  width: 62px;
+ }
+ @media (max-width: 767px) {
+ .other-Widgets .latest-activities img {
+  margin: 0 auto 10px;
+ }
+ .other-Widgets .latest-activities .text {
+  margin-left: 0;
+ }
+ .other-Widgets .latest-activities .date {
+  margin-top: 20px;
+ }
+}
+/* profile end  */
 /* start animation */
 @keyframes ring {
   0%,

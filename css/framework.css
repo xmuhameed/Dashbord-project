@@ -66,6 +66,9 @@
 .mt-0 {
   margin-top: 0px;
 }
+.mt-5 {
+  margin-top: 5px;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -288,6 +291,11 @@
   -moz-transform: translate(-50%);
   -ms-transform: translate(-50%);
   -o-transform: translate(-50%);
+}
+@media (max-width: 767px) {
+    .mobile-flex-column {
+  flex-direction: column;
+}
 }
 /* box */
 /* Start Position */
