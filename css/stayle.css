@@ -154,7 +154,7 @@ nav ul li i {
 /* start header */
 header {
   height: 60px;
-  width: 85vw
+  width: 85vw;
 }
 @media (max-width: 767px) {
   header {
@@ -532,15 +532,15 @@ header .user .image {
   width: 40px;
 }
 @media (max-width: 767px) {
-.uploads .text h3 {
-  font-size: 14px;
-}
-.uploads .text span {
-  font-size: 12px;
-}
-.uploads .row > span {
-  font-size: 12px;
-}
+  .uploads .text h3 {
+    font-size: 14px;
+  }
+  .uploads .text span {
+    font-size: 12px;
+  }
+  .uploads .row > span {
+    font-size: 12px;
+  }
 }
 /* end uploads */
 /* start project progress */
@@ -606,14 +606,14 @@ header .user .image {
   .project-progress ul li::after {
     outline: none;
     border: 2px solid var(--blue-color);
-}
+  }
 }
 /* end project progress */
 /* start reminders */
 @media (max-width: 767px) {
   .reminders .card h3 {
-  font-size: 14px;
-}
+    font-size: 14px;
+  }
 }
 .reminders .card::before {
   content: "";
@@ -663,10 +663,10 @@ header .user .image {
   margin-right: 20px;
 }
 .latest-post .likes:hover i {
-color: var(--red-color);
+  color: var(--red-color);
 }
 .latest-post .comments:hover i {
-color: var(--blue-color);
+  color: var(--blue-color);
 }
 /* end latest-post */
 /* start social */
@@ -757,7 +757,7 @@ color: var(--blue-color);
 .projects table tbody tr:hover {
   background-color: #f6f6f6;
 }
-.projects table td{
+.projects table td {
   border: 1px solid #eee;
   padding: 20px;
 }
@@ -962,12 +962,12 @@ textarea {
 }
 @media (max-width: 767px) {
   .custm {
-  flex-direction: column;
-}
-.custm-radio {
-  width: 100%;
-  margin-bottom: 10px;
-}
+    flex-direction: column;
+  }
+  .custm-radio {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 .custm-radio input {
   appearance: none;
@@ -1098,19 +1098,19 @@ textarea {
     flex-direction: column;
   }
 }
- .other-Widgets .latest-activities img {
+.other-Widgets .latest-activities img {
   width: 62px;
- }
- @media (max-width: 767px) {
- .other-Widgets .latest-activities img {
-  margin: 0 auto 10px;
- }
- .other-Widgets .latest-activities .text {
-  margin-left: 0;
- }
- .other-Widgets .latest-activities .date {
-  margin-top: 20px;
- }
+}
+@media (max-width: 767px) {
+  .other-Widgets .latest-activities img {
+    margin: 0 auto 10px;
+  }
+  .other-Widgets .latest-activities .text {
+    margin-left: 0;
+  }
+  .other-Widgets .latest-activities .date {
+    margin-top: 20px;
+  }
 }
 /* profile end  */
 /* projects start  */
@@ -1219,6 +1219,28 @@ textarea {
   margin-top: -13px;
 }
 /* courses end  */
+/* Friends start  */
+.friends-widgets {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.friends-widgets .widget .user-info,
+.friends-widgets .widget .user-info,
+.friends-widgets .widget .user-info {
+  position: relative;
+}
+.friends-widgets .widget:nth-child(1) .user-info::after,
+.friends-widgets .widget:nth-child(8) .user-info::after,
+.friends-widgets .widget:nth-child(9) .user-info::after {
+  content: "VIP";
+  color: var(--orange-color);
+  font-size: 50px;
+  font-weight: 600;
+  opacity: 0.2;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+/* Friends end  */
 /* start animation */
 @keyframes ring {
   0%,
@@ -1245,7 +1267,8 @@ textarea {
   }
 }
 @keyframes progress {
-  0%, 100% {
+  0%,
+  100% {
     background-color: var(--blue-color);
   }
   50% {
