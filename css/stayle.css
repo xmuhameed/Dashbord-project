@@ -1241,6 +1241,49 @@ textarea {
   top: 10px;
 }
 /* Friends end  */
+/* files start  */
+.files-widgets {
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .files-widgets {
+  flex-direction: column;
+}
+}
+.files-widgets .file-statistics {
+  flex-basis: 22%;
+  height: fit-content;
+}
+.files-widgets .file-statistics .card i {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+.files-widgets .file-statistics a {
+  margin-top: -30px;
+}
+.files-widgets .file-cards {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.files-widgets .file-cards .card {
+  height: fit-content;
+}
+.files-widgets .file-cards .card img {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.files-widgets .file-cards .card img:hover {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+/* files end  */
 /* start animation */
 @keyframes ring {
   0%,

@@ -55,6 +55,18 @@
 .bg-f6 {
     background-color: #f6f6f6;
 }
+.bg-blue-alt {
+  background-color: hsl(212, 100%, 50%, 0.25);
+}
+.bg-green-alt {
+  background-color: hsl(142, 71%, 45%, 0.25);
+}
+.bg-red-alt {
+  background-color: hsl(4, 90%, 58%, 0.25);
+}
+.bg-orange-alt {
+  background-color: hsl(38, 92%, 50%, 0.25);
+}
 /* colors */
 /* margin and padding */
 .m-0 {
@@ -181,6 +193,9 @@
 /* border */
 .border-ccc {
   border: 1px solid #ccc;
+}
+.border-eee {
+  border: 1px solid #eee;
 }
 .border-bottom {
       border-bottom: 1px solid #eee;
@@ -329,6 +344,10 @@
   -moz-transform: translate(-50%);
   -ms-transform: translate(-50%);
   -o-transform: translate(-50%);
+}
+.center-x-m {
+    margin-left: auto;
+    margin-right: auto;
 }
 @media (max-width: 767px) {
     .mobile-flex-column {
