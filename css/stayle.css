@@ -259,7 +259,7 @@ header .user .image {
 }
 /* start Widgets */
 .Widgets {
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 @media (max-width: 767px) {
   .Widgets {
@@ -851,6 +851,11 @@ textarea {
   color: #ccc;
   cursor: not-allowed;
 }
+@media (max-width: 767px) {
+  .general-info form input[type="email"] {
+    width: 75%;
+  }
+}
 .social-info .card {
   height: 40px;
   overflow: hidden;
@@ -858,6 +863,7 @@ textarea {
 .social-info .card i {
   color: #aaa;
   width: 40px;
+  border-right: 1px solid #ccc;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -866,7 +872,6 @@ textarea {
 }
 .social-info .card input {
   border: none;
-  border-left: 1px solid #ccc;
   padding-left: 10px;
 }
 .social-info .card:focus-within i {
