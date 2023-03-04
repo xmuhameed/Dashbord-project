@@ -218,6 +218,9 @@
 .fs-30 {
   font-size: 30px;
 }
+.fw-normal {
+  font-weight: normal;
+}
 .fw-500 {
   font-weight: 500;
 }
