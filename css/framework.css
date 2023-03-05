@@ -34,6 +34,9 @@
 .c-green {
   color: var(--green-color);
 }
+.c-grey {
+  color: var(--grey-color);
+}
 .bg-blue {
   background-color: var(--blue-color);
 }
@@ -138,6 +141,9 @@
 .mb-50 {
   margin-bottom: 50px;
 }
+.ml-2 {
+  margin-left: 2px;
+}
 .ml-15 {
   margin-left: 15px;
 }
@@ -233,6 +239,9 @@
 .full-w {
   width: 100%;
 }
+.width-fit {
+  width: fit-content;
+}
 .width-60 {
     width: 60px;
 }
@@ -286,6 +295,17 @@
 @media (max-width: 767px) {
   .txt-c-mobile {
     text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .fs-14-mobile {
+    font-size: 14px;
+  }
+  .fs-16-mobile {
+    font-size: 16px;
+  }
+  .fs-18-mobile {
+    font-size: 18px;
   }
 }
 /* fonts */

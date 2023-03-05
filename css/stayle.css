@@ -1284,6 +1284,20 @@ textarea {
   -o-transform: rotate(5deg);
 }
 /* files end  */
+/* Plans start  */
+.plan-widget:nth-child(1) .price {
+  border: 3px solid white;
+  outline: 3px solid var(--green-color);
+}
+.plan-widget:nth-child(2) .price {
+  border: 3px solid white;
+  outline: 3px solid var(--blue-color);
+}
+.plan-widget:nth-child(3) .price {
+  border: 3px solid white;
+  outline: 3px solid var(--orange-color);
+}
+/* Plans end  */
 /* start animation */
 @keyframes ring {
   0%,
